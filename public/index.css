@@ -1,0 +1,37 @@
+.container{
+    padding-top: 90px;
+}
+
+img{
+    width: 100px;
+    align-items: center;
+    padding: 5px;
+}
+
+.seccion{
+    padding-top: 50px;
+}
+
+.contenido2{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#quienes-somos{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.valores{
+    position: relative;
+    border: 2px;
+    border-color: rgb(30, 131, 214)  ;
+}
