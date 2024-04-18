@@ -1,0 +1,18 @@
+.contenedor-prestamos-personales{
+    height: 80vh;
+    min-height: 80vh;
+}
+
+.contenedor-prestamos-comerciales{
+    height: 80vh;
+    min-height: 80vh;
+}
+
+.img-contenedor{
+    object-fit: cover;
+}
+
+.titulo{
+    margin-bottom: 50px; 
+    margin-top: 60px;
+}

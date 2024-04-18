@@ -2,26 +2,181 @@
 <html lang="en">
 <head>
      <!--Metadata-->
-     <meta name="description" content="Pagina web ecocredit" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta charset="UTF-8">
+    <meta name="description" content="Pagina web ecocredit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-     <!--Personalización-->
-     <title>Ecocredit</title>
-     <link rel="icon" type="image/jpg" href="img/ecocredit.png"/>
+    <!--Personalización-->
+    <title>Ecocredit</title>
+    <link rel="icon" type="image/jpg" href="img/ecocredit.png"/>
 
-
-     <!--Estilos y boostrap-->
-     <link href="css/index.css" rel="stylesheet">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!--Estilos y boostrap-->
+    <link rel="stylesheet" href="css/spinner.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/whatsApp.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-     <!--Fonts-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Encabezado-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid justify-content-center">
+            <img src="https://ecocredit.com.uy/images/tild3837-6264-4130-b538-633363356632__logo_ecocredit_400.png"
+                style="width: 200px; padding: 10px;" class="position-absolute top-0 start-0" alt="ecocredit">
+            <!-- Botón para colapsar en dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenido de la barra de navegación -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">Inicio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <!-- Formulario de búsqueda (opcional) -->
+                <form class="form-inline my-2 my-lg-0 justify-content-center">
+                    <div class="d-flex aling-items-center">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar"
+                            id="input-busqueda">
+                        <button class="btn btn btn-outline-primary my-2 my-sm-0 mx-2" type="submit"
+                            onclick="buscar()">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!--Imagen del encabezado-->
+    <div class="t-cover__filter" id="inicio" style="height: 50vh; background-image: url('/replica-1/img/banner.jpg'); background-size: cover; position: relative; display: flex; justify-content: center; align-items: center;">
+        <div class="gradient-overlay"
+            style="color: antiquewhite; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: -moz-linear-gradient(top, rgba(0, 153, 255, 0.5), rgba(0, 51, 102, 0.7)); background-image: -webkit-linear-gradient(top, rgba(0, 153, 255, 0.5), rgba(0, 51, 102, 0.7)); background-image: -o-linear-gradient(top, rgba(0, 153, 255, 0.5), rgba(0, 51, 102, 0.7)); background-image: -ms-linear-gradient(top, rgba(0, 153, 255, 0.5), rgba(0, 51, 102, 0.7)); background-image: linear-gradient(to bottom, rgba(0, 153, 255, 0.5), rgba(0, 51, 102, 0.7)); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#003399', endColorstr='#000033'); display: flex; justify-content: center; align-items: center;">
+            <div style="max-width: 80%; text-align: center;">
+                <h1>PRÉSTAMOS A COMERCIANTES</h1>
+            </div>
+        </div>
+    </div>
     
+
+    <section class="section-hero">
+        <div class="titulo container-fluid d-flex justify-content-center align-items-center">
+            <div class="titulo-text mt-5 pt-2">
+                <h1>Préstamos personales</h1>
+            </div>
+        </div>
+        <div class="contenedor-prestamos-personales container d-flex flex-row justify-content-space">
+            <div class="container-fluid d-flex flex-column align-items-center justify-content-center col-8">
+                <div class="row mt-5">
+                    <div class="col-md-2">
+                        <img src="https://ecocredit.com.uy/images/tild3534-6361-4534-a336-613237336163__ecocredit_icons-4.png"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-8 d-flex flex-column">
+                        <h4>Solicite su préstamo con su cédula o con su recibo de sueldo</h4>
+                        <p>Acceda a su préstamo teniendo en cuenta los requisitos principales.</p>
+                    </div>
+                </div>
+                <div class="row mt-5">                    
+                    <div class="col-md-2">
+                        <img src="https://ecocredit.com.uy/images/tild6362-3137-4264-b539-396531323630__ecocredit_icons-3.png"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Solicite su préstamo con su cédula o con su recibo de sueldo</h4>
+                        <p>Acceda a su préstamo teniendo en cuenta los requisitos principales.</p>
+                    </div>
+                </div>
+                <div class="row mt-5">                    
+                    <div class="col-md-2">
+                        <img src="https://ecocredit.com.uy/images/tild3534-6361-4534-a336-613237336163__ecocredit_icons-4.png"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Solicite su préstamo con su cédula o con su recibo de sueldo</h4>
+                        <p>Acceda a su préstamo teniendo en cuenta los requisitos principales.</p>
+                    </div>
+                </div>        
+            </div>
+            <div class="container-fluid flex-column align-items-center justify-content-center d-flex col-4">
+                <div class="img-contenedor img-fluid col-md-2" style="width: 100%; height: 210px;">
+                    <img src="img/prestamos-personales.jpg" alt="" style="max-width: 100%">
+                </div>
+            </div>
+        </div>
+        <div class="titulo container-fluid d-flex justify-content-center align-items-center">
+            <div class="titulo-text pb-5">
+                <h1>Préstamos a comerciantes</h1>
+            </div>
+        </div>
+        <div class="contenedor-prestamos-comerciales container d-flex flex-row justify-content-center mt-5 pt-5">
+            <div class="comerciales-info col-4 d-flex flex-column align-items-center">
+                <div class="col-12 d-flex flex-column text-center">
+                    <h4>Solicite su préstamo con su cédula o con su recibo de sueldo</h4>
+                    <p>Acceda a su préstamo teniendo en cuenta los requisitos principales.</p>
+                </div>
+                <div class="col-12">
+                    <img src="https://ecocredit.com.uy/images/tild3534-6361-4534-a336-613237336163__ecocredit_icons-4.png"
+                        class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="comerciales-info col-4 d-flex flex-column align-items-center">
+                <div class="col-12 d-flex flex-column text-center">
+                    <h4>Solicite su préstamo con su cédula o con su recibo de sueldo</h4>
+                    <p>Acceda a su préstamo teniendo en cuenta los requisitos principales.</p>
+                </div>
+                <div class="col-12">
+                    <img src="https://ecocredit.com.uy/images/tild3534-6361-4534-a336-613237336163__ecocredit_icons-4.png"
+                        class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="comerciales-info col-4 d-flex flex-column align-items-center">
+                <div class="col-12 d-flex flex-column text-center">
+                    <h4>Solicite su préstamo con su cédula o con su recibo de sueldo</h4>
+                    <p>Acceda a su préstamo teniendo en cuenta los requisitos principales.</p>
+                </div>
+                <div class="col-12 d-flex align-items-center">
+                    <img src="https://ecocredit.com.uy/images/tild3534-6361-4534-a336-613237336163__ecocredit_icons-4.png"
+                        class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: black; color: aliceblue;" id="contacto" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pl-5 d-flex justify-content-center align-items-center">
+                    <div class="ola">
+                        <h3>Información de contacto</h3>
+                        <p>Av. 8 de Octubre 3791, 11400 Montevideo, Departamento de Montevideo, Uruguay</p>
+                        <p>Teléfono: +57 3108613594</p>
+                        <p>Email: ecocreditve@gmail.com </p>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Acerca de nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
