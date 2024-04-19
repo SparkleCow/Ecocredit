@@ -1,0 +1,31 @@
+.spinner-container {
+    position: relative;
+    width: 90%; /* Ajusta el tamaño del contenedor según sea necesario */
+    min-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .spinner {
+    border: 3px solid #ccc;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .counter {
+    position:absolute;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
+    z-index: 1; /* Asegura que el número esté delante del spinner */
+  }
+  

@@ -61,7 +61,7 @@
     </div>
     </nav>
     <!--Imagen del encabezado-->
-    <div class="t-cover__filter" id="inicio" style="height: 50vh; background-image: url('/replica-1/img/banner.jpg'); background-size: cover; position: relative; display: flex; justify-content: center; align-items: center;">
+    <div class="encabezado t-cover__filter" id="inicio" style="height: 50vh; background-image: url('/replica-1/img/banner.jpg'); background-size: cover; position: relative; display: flex; justify-content: center; align-items: center;">
         <div class="gradient-overlay"
             style="color: antiquewhite; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: -moz-linear-gradient(top, rgba(0, 153, 255, 0.5), rgba(0, 51, 102, 0.7)); background-image: -webkit-linear-gradient(top, rgba(0, 153, 255, 0.5), rgba(0, 51, 102, 0.7)); background-image: -o-linear-gradient(top, rgba(0, 153, 255, 0.5), rgba(0, 51, 102, 0.7)); background-image: -ms-linear-gradient(top, rgba(0, 153, 255, 0.5), rgba(0, 51, 102, 0.7)); background-image: linear-gradient(to bottom, rgba(0, 153, 255, 0.5), rgba(0, 51, 102, 0.7)); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#003399', endColorstr='#000033'); display: flex; justify-content: center; align-items: center;">
             <div style="max-width: 80%; text-align: center;">
@@ -112,7 +112,7 @@
             </div>
             <div class="container-fluid flex-column align-items-center justify-content-center d-flex col-4">
                 <div class="img-contenedor img-fluid col-md-2" style="width: 100%; height: 210px;">
-                    <img src="img/prestamos-personales.jpg" alt="" style="max-width: 100%">
+                    <img class="img" src="img/prestamos-comerciales.jpg" alt="" style="max-width: 100%">
                 </div>
             </div>
         </div>
@@ -121,24 +121,14 @@
                 <h1>Préstamos a comerciantes</h1>
             </div>
         </div>
-        <div class="contenedor-prestamos-comerciales container d-flex flex-row justify-content-center mt-5 pt-5">
-            <div class="comerciales-info col-4 d-flex flex-column align-items-center">
+        <div class="contenedor-prestamos-comerciales container d-flex flex-row justify-content-between mt-5 pt-5">
+            <div class="comerciales-info col-3 d-flex flex-column align-items-center">
                 <div class="comercial-texto col-12 d-flex flex-column text-center">
                     <h4>Completa el formulario</h4>
                     <p>Accede al formulario de primera vez o por renovación</p>
                 </div>
                 <div class="comercial-img col-3 d-flex justify-content-center align-items-center">
                     <img src="https://ecocredit.com.uy/images/tild3739-3861-4637-b531-326335333939__ecocredit_icons-1.png"
-                        class="icon-img" alt="">
-                </div>
-            </div>
-            <div class="comerciales-info col-4 d-flex flex-column align-items-center">
-                <div class="comercial-texto col-12 d-flex flex-column text-center">
-                    <h4>Aprovación rapida</h4>
-                    <p>Obtenga la aceptación de acuerdo a sus necesidades</p>
-                </div>
-                <div class="comercial-img col-3 d-flex justify-content-center align-items-center">
-                    <img src="https://ecocredit.com.uy/images/tild6538-3339-4961-b433-316264646334__ecocredit_icons-2.png"
                         class="icon-img" alt="">
                 </div>
             </div>
@@ -152,8 +142,30 @@
                         class="icon-img" alt="">
                 </div>
             </div>
+            <div class="comerciales-info col-3 d-flex flex-column align-items-center">
+                <div class="comercial-texto col-12 d-flex flex-column text-center">
+                    <h4>Aprovación rapida</h4>
+                    <p>Obtenga la aceptación de acuerdo a sus necesidades</p>
+                </div>
+                <div class="comercial-img col-3 d-flex justify-content-center align-items-center">
+                    <img src="https://ecocredit.com.uy/images/tild6538-3339-4961-b433-316264646334__ecocredit_icons-2.png"
+                        class="icon-img" alt="">
+                </div>
+            </div>
         </div>
     </section>
+
+    <div style="padding: 100px;">
+        <div class="container my-5 text-center">
+            <h1>Préstamos Aprobados en 2023</h1>
+        </div>
+        <div class="spinner-container" id="spinner-container">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <div class="spinner"></div>
+                <div class="counter">0</div>
+            </div>
+        </div>
+    </div>
 
     <div class="nosotros container my-5">
         <div class="container-fluid text-center mb-5">
@@ -166,32 +178,51 @@
                 atención personalizada de nuestro comienzo, la cual nos hace únicos en el mercado.
             </p>
         </div>
-        <div class="informacion-nosotros container-fluid d-flex justify-content-between py-5">
-            <div class="col-6 d-flex justify-content-start align-items-center">
-                <div class="nosotros-img">
-                    <img src="img/prestamos-comerciales.jpg" alt="" style="max-width: 100%; height: auto;">
+
+        <div class="informacion-nosotros container-fluid d-flex my-5">
+            <div class="col-6 d-flex justify-content-center align-items-center ">
+                <div class="nosotros-img img">
+                    <img src="img/prestamos-personales.jpg" alt="" style="max-width: 100%; height: auto;">
                 </div>
             </div>
-            <div class="col-6 d-flex flex-column">
+            <div class="col-6 d-flex flex-column align-items-center justify-content-center">
                 <div class="contenido">
-                    <div class="seccion valores text-center">
+                    <div class="seccion valores mb-5">
+                        <h1>Valores</h1>
+                        <p>Profesionalismo: Tenemos la convicción de creer en lo que hacemos con el suficiente conocimiento para lograr progreso.</p>
+                        <p>Innovación: Crear continuamente ideas originales, así como productos a medida de cada cliente.</p>
+                        <p>Respeto: Tenemos un diálogo continuo y abierto bajo una órbita de libertad.</p>
+                        <p>Calidad: Todo lo que se realiza está testeado y comprobado para brindar así un servicio confiable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="informacion-nosotros container-fluid d-flex my-5">
+            <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+                <div class="contenido">
+                    <div class="seccion valores text-center ">
                         <h1>Misión</h1>
                         <p>Brindar soluciones, respetando y escuchando a nuestros clientes y colaboradores.</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <div class="nosotros-img img">
+                    <img src="img/mision.jpg" alt="" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+        <div class="informacion-nosotros container-fluid d-flex my-5">
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <div class="nosotros-img img">
+                    <img src="img/vision.jpg" alt="" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+            <div class="col-6 d-flex flex-column align-items-center justify-content-center">
                 <div class="contenido">
-                    <div class="seccion valores text-center">
+                    <div class="seccion valores text-center mb-5">
                         <h1>Visión</h1>
                         <p>Ser una empresa referente por la innovación en el acceso y el servicio personalizado del crédito al consumo en todo el país.</p>
-                    </div>
-                </div>
-                <div class="contenido">
-                    <div class="seccion valores text-center">
-                        <h1>Valores</h1>
-                        <p><b>Profesionalismo:</b> Tenemos la convicción de creer en lo que hacemos con el suficiente conocimiento para lograr progreso.</p>
-                        <p><b>Innovación:</b> Crear continuamente ideas originales, así como productos a medida de cada cliente.</p>
-                        <p><b>Respeto:</b> Tenemos un diálogo continuo y abierto bajo una órbita de libertad.</p>
-                        <p><b>Calidad:</b> Todo lo que se realiza está testeado y comprobado para brindar así un servicio confiable.</p>
                     </div>
                 </div>
             </div>
@@ -221,5 +252,13 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/spinner.js"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
