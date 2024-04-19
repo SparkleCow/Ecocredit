@@ -1,18 +1,73 @@
 .contenedor-prestamos-personales{
-    height: 80vh;
-    min-height: 80vh;
+    height: 75vh;
+    min-height: 75vh;
 }
 
 .contenedor-prestamos-comerciales{
-    height: 80vh;
-    min-height: 80vh;
+    height: 40vh;
+    min-height: 40vh;
 }
 
 .img-contenedor{
     object-fit: cover;
 }
 
-.titulo{
-    margin-bottom: 50px; 
-    margin-top: 60px;
+.titulo-1{
+    margin-top: 70px;
 }
+
+.titulo-2{
+    margin-bottom: 50px;
+}
+
+.comerciales-info{
+    height: 80%;
+}
+
+.comercial-texto{
+    height: 50%;
+}
+
+.comercial-img{
+    height: 50%;
+}
+
+.icon-img{
+    height: 120px;
+    width: auto;
+}
+
+.titulo-nosotros h1{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.nosotros{
+    height: 80vh;
+    min-height: 80vh;
+}
+
+.nosotros-img{
+    width: 70%;
+}
+
+.link-information{
+    text-decoration: none;
+    color: white;
+}
+
+.link-information:hover{
+    opacity: 0.4;
+}
+
+.custom-container {
+    padding-left: 15%;
+    text-align: left;
+}
+
+.pie-pagina-contacto{
+    width: 60%;
+}
+
+
+
