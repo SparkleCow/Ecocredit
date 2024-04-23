@@ -3,9 +3,12 @@
 }
 
 .contenedor-prestamos-comerciales{
-    min-height: 40vh;
+    min-height: 30vh;
     margin-top: 60px;
-    padding-top: 40px;
+}
+
+.contenedor-texto-prestamos{
+    height: 50%;
 }
 
 .encabezado{
@@ -17,7 +20,7 @@
 }
 
 .titulo-1{
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .titulo-2{
